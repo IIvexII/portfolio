@@ -54,3 +54,34 @@ a{
 .sub2 #l3{
     margin-left: 45px;
 }
+/* For mobiles */
+@media only screen and (max-width: 640px){
+    .sub1{
+        width: 350px;
+        padding-left: 30px;
+    }
+    .sub1 img {
+        width: 50px;
+        margin-right: 18%;
+    }
+    .sub1 img:nth-child(3){
+        margin-right: 0;    
+    }
+    .sub2{
+        width: 330px;
+    }
+    .sub2 p{
+        font-size: 13px;
+    }
+    .sub2 #l1{
+        margin-left: 12px;
+    }
+    .sub2 #l2{
+        margin-left: 11%;
+    }
+    .sub2 #l3{
+        margin-left: 5%;
+    }
+
+
+}
