@@ -1,6 +1,9 @@
 body{
     background-color: #C398CD;
 }
+a{
+    text-decoration: unset;
+}
 .container{
     width:100%;
 }
@@ -9,7 +12,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8%;
+    margin-top: 130px;
 }
 .main img{
     width:250px;
@@ -43,10 +46,10 @@ body{
     color: #574041;
 } 
 .sub2 #l1{
-    margin-left: 105px;
+    margin-left: 100px;
 }
 .sub2 #l2{
-    margin-left: 70px;
+    margin-left: 75px;
 }
 .sub2 #l3{
     margin-left: 45px;
