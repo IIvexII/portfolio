@@ -2,58 +2,236 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- For SEO -->
-    <meta
-      name="description"
-      content="IIvexII is the internet name of Zafeer Hafeez you can find him on Github, Twitter, and Instagram. This portfolio only share these links to find him easily." />
-    <meta
-      name="keywords"
-      content="Vex vex Zafeer Hafeez zafeerhafeez ZafeerHafeez IIvexII iivexii IIVEXII iivexii github iivexii twitter iivexii instagram iivexii fiverr Zafeer Hafeez Social Media Zafeer Hafeez Portfolio Zafeer Hafeez Instagram Zafeerzafeer" />
-    <!-- End SEO -->
-
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Zafeer(IIvexII)</title>
+    <title>Zafeer Hafeez - IIvexII</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="main">
+    <!------------------->
+    <!--     header    -->
+    <!------------------->
+    <header>
+      <!-- navbar -->
+      <nav id="navbar">
+        <ul>
+          <li><a class="nav-link" href="#about-section">About Me</a></li>
+          <li><a class="nav-link" href="#work-section">Projects</a></li>
+          <li><a class="nav-link" href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------->
+    <!--    Main       -->
+    <!------------------->
+    <main>
+      <!------------------->
+      <!-- Intro section -->
+      <!------------------->
+
+      <section id="intro-section">
+        <h1>Hi, my name is <span class="highlight">Zafeer</span></h1>
+        <h1>I'm a web developer.</h1>
+        <a class="btn top-space" href="#about-section">Know more</a>
+      </section>
+
+      <!------------------->
+      <!-- About Section -->
+      <!------------------->
+
+      <section id="about-section">
         <img
-          src="img/profile_pic.jpg"
-          id="profile_picture"
-          alt="Animated picture of Zafeer Hafeez(IIvexII)" />
-      </div>
-      <div class="sub1">
-        <a href="https://github.com/IIvexII" target="_blank"
-          ><img src="img/github-icon.svg" alt="icon of github"
-        /></a>
-        <a href="https://www.instagram.com/zafeerhafeez/" target="_blank"
-          ><img src="img/instagram-icon.svg" alt="Instagram icon"
-        /></a>
-        <a href="https://twitter.com/Zafeer_Hafeez" target="_blank"
-          ><img
-            src="img/twitter-icon.svg"
-            alt="icon of twitter - animated brown bird flying."
-        /></a>
-      </div>
-      <div class="sub2">
-        <a href="https://github.com/IIvexII" target="_blank"
-          ><p id="l1">@IIvexII</p></a
+          src="./assets/img/profile.png"
+          alt="Animated picture of Zafeer Hafeez wearing a headphone" />
+        <article>
+          <h1>About Me</h1>
+          <p>
+            I am a student trying to learn everything on my way to become a
+            developer. I am currently doing my BS in Computer Science from
+            Lahore Garrison University. My everyday routine includes praying,
+            reading, learning something new and working on projects.
+          </p>
+          <a class="btn dark top-space" href="#work-section">My Work</a>
+        </article>
+      </section>
+
+      <!--------------------->
+      <!-- My work section -->
+      <!--------------------->
+      <section id="work-section">
+        <h1>My Work</h1>
+        <div id="projects">
+          <!-- project 1 -->
+          <div class="project">
+            <img class="project-img" src="./assets/img/projects/nike-ui.png" />
+            <div class="project-text">
+              <h1 class="project-title">Nike Showcase</h1>
+              <p class="project-details">
+                This is a landing page of NIKE brand showcasing some of their
+                shoes including Nike Air Max, Max Air Taco, and more.
+              </p>
+              <div class="top-space">
+                <a
+                  class="btn dark"
+                  href="https://iivexii.me/product-landing-page/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn"
+                  href="https://github.com/IIvexII/product-landing-page"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="project">
+            <img class="project-img" src="./assets/img/projects/seasons.png" />
+            <div class="project-text">
+              <h1 class="project-title">Seasons</h1>
+              <p class="project-details">
+                This is a ReactJS based web app that identifies the seasons like
+                summer, winter, spring and autumn using the hemisphere.
+              </p>
+              <div class="top-space">
+                <a
+                  class="btn dark"
+                  href="https://seasons.iivexii.me"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn"
+                  href="https://github.com/IIvexII/seasons-react-app"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- project 3-->
+          <div class="project">
+            <img class="project-img" src="./assets/img/projects/astro.png" />
+            <div class="project-text">
+              <h1 class="project-title">Astro</h1>
+              <p class="project-details">
+                Astro is an implementation of Open Weather API, with the
+                back-end developed in ExpressJS that gives some other custom
+                APIs for the front-end which is purely written in Typescript
+                (only Logic), CSS and HTML.
+              </p>
+              <div class="top-space">
+                <a
+                  class="btn dark"
+                  href="https://astro.vex.software/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn"
+                  href="https://github.com/Vex-Co/Astro"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- project 4-->
+          <div class="project">
+            <img
+              class="project-img"
+              src="./assets/img/projects/fake-git-clone.png" />
+            <div class="project-text">
+              <h1 class="project-title">Github profile Clone</h1>
+              <p class="project-details">
+                This Clone is developed in ReactJS as an implementation of core
+                concepts like components, JSX, etc.
+              </p>
+              <div class="top-space">
+                <a
+                  class="btn dark"
+                  href="https://fake.git.iivexii.me/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn"
+                  href="https://github.com/IIvexII/github-profile-clone"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- project 5-->
+          <div class="project">
+            <img
+              class="project-img"
+              src="./assets/img/projects/hotel-landing-page.png" />
+            <div class="project-text">
+              <h1 class="project-title">ExHotel</h1>
+              <p class="project-details">
+                ExHotel is a free template that is made available for everyone
+                who wanted to use it in their projects.
+              </p>
+              <div class="top-space">
+                <a
+                  class="btn dark"
+                  href="https://iivexii.me/hotelTemplate/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn"
+                  href="https://github.com/IIvexII/hotelTemplate"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------->
+      <!--   contact me   -->
+      <!-------------------->
+      <section id="contact-me">
+        <h1>Contact Me</h1>
+        <p>Would you like to work with me? Awesome!</p>
+        <a class="btn dark top-space" href="mailto:zafeer@iivexii.me"
+          >Let's Talk</a
         >
-        <a href="https://www.instagram.com/zafeerhafeez/" target="_blank"
-          ><p id="l2">@ZafeerHafeez</p></a
-        >
-        <a href="https://twitter.com/Zafeer_Hafeez" target="_blank"
-          ><p id="l3">@Zafeer_Hafeez</p></a
-        >
-      </div>
-      <div class="for-seo">
-        <h1>Zafeer Hafeez</h1>
-        <h2>IIvexII</h2>
-        <h2>iivexii</h2>
-      </div>
-    </div>
+        <div id="contact-links">
+          <ul>
+            <li>
+              <a href="https://github.com/IIvexII"
+                ><img src="./assets/img/icons/github-icon.svg"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/zafeerhafeez/"
+                ><img src="./assets/img/icons/instagram-icon.svg"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Zafeer_Hafeez"
+                ><img src="./assets/img/icons/twitter-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!----------------------->
+    <!--      Footer       -->
+    <!----------------------->
+    <footer>
+      <p>© 2022 | Made by @<a href="https://github.com/IIvexII">IIvexII</a></p>
+    </footer>
   </body>
 </html>
