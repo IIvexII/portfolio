@@ -160,6 +160,8 @@ header nav .nav-link:hover {
   line-height: 1.5;
   font-size: 1.3rem;
   text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 /* --------------------------- */
 /*       Contact section       */
