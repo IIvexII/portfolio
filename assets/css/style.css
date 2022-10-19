@@ -103,6 +103,7 @@ header nav .nav-link:hover {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 #about-section img {
+  border-radius: 100%;
   width: 350px;
   height: 350px;
 }
