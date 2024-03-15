@@ -16,10 +16,10 @@ export default function Header({ name, socialInfo, pageInfo }) {
 
         {/* Navigation icons */}
         <nav className="flex items-center px-8 space-x-8 text-xl max-sm:hidden">
-          {pageInfo.map((page) => (
+          {pageInfo.map((page, index) => (
             <a
               href={page.link}
-              key={page.link}
+              key={index}
               className="flex flex-col justify-center items-center py-3 px-3 hover:bg-black hover:text-white rounded-full transition-all duration-300"
             >
               <FontAwesomeIcon icon={page.icon} className="w-5" />

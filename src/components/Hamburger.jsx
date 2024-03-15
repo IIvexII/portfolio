@@ -14,7 +14,7 @@ export default function Hamburger({ pageInfo }) {
 
       {/* menu to show when button clicked */}
       <div
-        className={`absolute left-[-19px] mt-2 bg-white border border-slate-300 shadow-md rounded-full transition duration-300 ease-in-out ${
+        className={`absolute left-[-19px] mt-2 bg-white border border-gray-800 shadow-md rounded-full transition duration-300 ease-in-out bg-opacity-95 ${
           showMenu ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
