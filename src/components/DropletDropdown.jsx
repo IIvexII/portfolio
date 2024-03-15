@@ -1,29 +1,24 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { socialInfo } from "../constants";
 import { useState } from "react";
 
-export default function DropletDropdown({ className }) {
+export default function DropletDropdown({ className, socialInfo }) {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <div className={`relative ${className}`}>
+    <nav className={`relative ${className}`}>
       {/* Button to show drop down */}
       <div
         onClick={() => setShowDropdown(!showDropdown)}
         className="bg-black text-base py-1 px-5 text-white rounded-full cursor-pointer hover:bg-slate-800 transition duration-300 ease-in-out"
       >
-        {showDropdown ? (
-          <FontAwesomeIcon icon={faXmark} className="w-5" />
-        ) : (
-          <FontAwesomeIcon icon={faLink} className="w-5" />
-        )}
+        <FontAwesomeIcon icon={faLink} className="w-5" />
       </div>
 
       {/* Dropdown that will be show after button is clicked */}
       <div
-        className={`absolute top-0 left-[10px] mt-10 transition duration-500 opacity-0 ${
-          showDropdown && "opacity-100"
+        className={`absolute top-0 left-[10px] mt-10 transition duration-500  ${
+          showDropdown ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
         <div className="flex flex-col space-y-2">
@@ -32,7 +27,7 @@ export default function DropletDropdown({ className }) {
             <abbr
               key={index}
               title={social.name}
-              className="py-3 px-3 rounded-full bg-white text-black border border-black shadow-lg hover:bg-slate-900 hover:text-white transition duration-500 ease-in-out bg-opacity-80"
+              className="py-3 px-3 rounded-full bg-white text-black border border-slate-300 shadow-lg hover:bg-slate-900 hover:text-white transition duration-500 ease-in-out bg-opacity-80"
             >
               <a
                 key={index}
@@ -44,8 +39,19 @@ export default function DropletDropdown({ className }) {
               </a>
             </abbr>
           ))}
+
+          {/* Close button */}
+          <abbr
+            title="Close"
+            onClick={() => setShowDropdown(!showDropdown)}
+            className="py-3 px-3 rounded-full bg-red-500 text-white border border-slate-300 shadow-lg hover:bg-red-700 hover:text-white transition duration-500 ease-in-out bg-opacity-80"
+          >
+            <a className="flex items-center justify-center">
+              <FontAwesomeIcon icon={faXmark} className="w-4" />
+            </a>
+          </abbr>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

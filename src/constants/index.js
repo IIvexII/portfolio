@@ -4,6 +4,13 @@ import {
   faInstagram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faAddressCard,
+  faHome,
+  faPaperPlane,
+  faToolbox,
+  faCompassDrafting,
+} from "@fortawesome/free-solid-svg-icons";
 
 const socialInfo = [
   { name: "Github", icon: faGithubAlt, link: "https://github.com/IIvexII" },
@@ -24,4 +31,11 @@ const socialInfo = [
   },
 ];
 
-export { socialInfo };
+const pageInfo = [
+  { name: "Home", icon: faHome, link: "#" },
+  { name: "Contact", icon: faPaperPlane, link: "#contact" },
+  { name: "About", icon: faAddressCard, link: "#about" },
+  { name: "Projects", icon: faCompassDrafting, link: "#projects" },
+  { name: "Tools", icon: faToolbox, link: "#" },
+];
+export { socialInfo, pageInfo };
