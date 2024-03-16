@@ -1,21 +1,36 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Hamburger({ pageInfo }) {
-  const [showMenu, setShowMenu] = useState(false);
+  const [show, setShow] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShow(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     // hamburger button
-    <nav className="relative text-5xl hidden max-sm:text-2xl max-sm:block">
-      <div onClick={() => setShowMenu(!showMenu)} className="cursor-pointer">
+    <nav className="relative text-5xl hidden max-sm:text-2xl max-sm:block hover:scale-105 focus:scale-105 transition duration-300 ease-in-out">
+      <div onClick={() => setShow(!show)} className="cursor-pointer">
         <FontAwesomeIcon icon={faHamburger} />
       </div>
 
       {/* menu to show when button clicked */}
       <div
-        className={`absolute -translate-x-3 mt-2 border-b-0 border-t border-gray-600 bg-white shadow-md rounded-full transition duration-500 ease-in-out bg-opacity-95 ${
-          showMenu ? "opacity-100 visible" : "opacity-0 invisible"
+        ref={menuRef}
+        className={`absolute -translate-x-[9px] mt-2 border-b-0 border-t border-gray-600 bg-white shadow-md rounded-full transition duration-500 ease-in-out bg-opacity-95 ${
+          show ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
         <div className="pt-0 flex flex-col items-center justify-center">
@@ -34,18 +49,6 @@ export default function Hamburger({ pageInfo }) {
               </p>
             </a>
           ))}
-
-          {/* Close Button */}
-          <a
-            onClick={() => setShowMenu(!setShowMenu)}
-            className="relative group w-full flex justify-center py-5 px-3 text-lg text-white bg-black  hover:bg-red-700 rounded-b-full transition-all duration-300"
-          >
-            <FontAwesomeIcon icon={faXmark} className="w-5" />
-
-            <p className="group-hover:opacity-100 group-hover:visible opacity-0 invisible  absolute translate-x-14 text-xs text-black bg-white px-3 py-1 border border-black rounded transition duration-700 ease-in-out">
-              Close
-            </p>
-          </a>
         </div>
       </div>
     </nav>

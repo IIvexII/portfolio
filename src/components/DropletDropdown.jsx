@@ -1,9 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { useState, useRef, useEffect } from "react";
 
 export default function DropletDropdown({ className, socialInfo }) {
   const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className={`relative ${className}`}>
@@ -17,6 +31,7 @@ export default function DropletDropdown({ className, socialInfo }) {
 
       {/* Dropdown that will be show after button is clicked */}
       <div
+        ref={dropdownRef}
         className={`absolute top-0 left-[10px] mt-10 transition duration-500  ${
           showDropdown ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
@@ -39,17 +54,6 @@ export default function DropletDropdown({ className, socialInfo }) {
               </a>
             </abbr>
           ))}
-
-          {/* Close button */}
-          <abbr
-            title="Close"
-            onClick={() => setShowDropdown(!showDropdown)}
-            className="py-3 px-3 rounded-full bg-black text-white border border-slate-700 shadow-lg hover:bg-red-700 hover:text-white transition duration-500 ease-in-out bg-opacity-80"
-          >
-            <a className="flex items-center justify-center">
-              <FontAwesomeIcon icon={faXmark} className="w-4" />
-            </a>
-          </abbr>
         </div>
       </div>
     </nav>
