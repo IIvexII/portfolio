@@ -7,9 +7,9 @@ import {
 import {
   faAddressCard,
   faHome,
-  faPaperPlane,
   faToolbox,
   faCompassDrafting,
+  faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
 
 const socialInfo = [
@@ -33,9 +33,17 @@ const socialInfo = [
 
 const pageInfo = [
   { name: "Home", icon: faHome, link: "#" },
-  { name: "Contact", icon: faPaperPlane, link: "#contact" },
-  { name: "About", icon: faAddressCard, link: "#about" },
-  { name: "Projects", icon: faCompassDrafting, link: "#projects" },
+  { name: "About", icon: faCircleInfo, link: "#about" },
   { name: "Tools", icon: faToolbox, link: "#" },
+  { name: "Projects", icon: faCompassDrafting, link: "#projects" },
+  { name: "Contact", icon: faAddressCard, link: "#contact" },
 ];
-export { socialInfo, pageInfo };
+
+const quotes = [
+  {
+    text: "{Clarity} about what matters provides clarity about what does not.",
+    reference: "Cal Newport",
+  },
+];
+
+export { socialInfo, pageInfo, quotes };
