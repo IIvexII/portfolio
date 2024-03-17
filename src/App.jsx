@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <Header name="zafeer" socialInfo={socialInfo} pageInfo={pageInfo} />
-      <main className="snap-y snap-mandatory h-screen overflow-auto scroll-smooth">
+      <main className="snap-y snap-mandatory max-md:snap-proximity h-screen overflow-auto scroll-smooth">
         {/* Hero Section */}
         <HeroSection profileImage={profileImage} quote={quotes[0]} />
 
