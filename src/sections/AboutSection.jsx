@@ -7,7 +7,7 @@ export default function AboutSection() {
       className="snap-start flex justify-center bg-black text-white h-screen min-h-[630px] md:max-h-[660px]"
     >
       <div className="mx-8 h-full w-full flex justify-center items-center max-w-[1024px] max-sm:flex-col max-sm:justify-between max-sm:space-y-10 max-sm:pb-16">
-        <article className="flex flex-col max-sm:justify-end space-y-10 w-full pr-24 max-lg:pr-10 max-md:pr-4 max-md:space-y-8 max-sm:space-y-6 max-sm:mt-28">
+        <article className="flex flex-col max-sm:justify-end space-y-10 w-full pr-24 max-lg:pr-10 max-md:pr-4 max-md:space-y-8 max-sm:space-y-6 max-sm:mt-28 max-sm:pr-0">
           <h1 className="text-5xl underline underline-offset-8 decoration-wavy max-md:text-3xl max-sm:text-center hover:scale-110 transition duration-500 ease-in-out select-none">
             About Me
           </h1>
