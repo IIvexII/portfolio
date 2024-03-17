@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom css for tailwind */
+@layer utilities {
+  .highlight {
+    @apply bg-white text-black px-1;
+  }
+}

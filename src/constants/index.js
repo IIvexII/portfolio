@@ -32,11 +32,11 @@ const socialInfo = [
 ];
 
 const pageInfo = [
-  { name: "Home", icon: faHome, link: "#" },
-  { name: "About", icon: faCircleInfo, link: "#about" },
+  { name: "Home", icon: faHome, link: "#home" },
+  { name: "About", icon: faCircleInfo, link: "#about-me" },
   { name: "Tools", icon: faToolbox, link: "#" },
-  { name: "Projects", icon: faCompassDrafting, link: "#projects" },
-  { name: "Contact", icon: faAddressCard, link: "#contact" },
+  { name: "Projects", icon: faCompassDrafting, link: "#" },
+  { name: "Contact", icon: faAddressCard, link: "#" },
 ];
 
 const quotes = [
