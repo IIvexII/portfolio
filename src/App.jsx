@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { profileImage, wavyImage } from "./assets";
-import { Header } from "./components";
+import { Header, Seperator } from "./components";
 import { socialInfo, pageInfo, quotes } from "./constants";
 import { AboutSection, HeroSection } from "./sections";
 
@@ -31,9 +31,9 @@ export default function App() {
       >
         {/* Hero Section */}
         <HeroSection profileImage={profileImage} quote={quotes[0]} />
-        <div
-          className={`z-10 bg-[url('/src/assets/images/wavy-pattern.png')] w-screen h-5 bg-contain bg-center bg-repeat`}
-        ></div>
+
+        <Seperator />
+
         {/* About me section */}
         <AboutSection />
       </main>

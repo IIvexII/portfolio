@@ -1,4 +1,5 @@
-import { groupImage } from "../assets";
+import { CompGroupImage, groupImage } from "../assets";
+import { Image } from "../components";
 
 export default function AboutSection() {
   return (
@@ -27,8 +28,9 @@ export default function AboutSection() {
 
         {/* image collection */}
         <div className="w-full h-full flex justify-center items-center max-sm:items-start">
-          <img
+          <Image
             src={groupImage}
+            compressedSrc={CompGroupImage}
             alt="group"
             className="filter saturate-0 object-cover rounded-lg max-lg:w-[350px] max-[900px]:w-[300px] max-sm:w-[220px] max-sm:scale-110 hover:scale-125 transition duration-500 ease-in-out"
           />

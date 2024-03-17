@@ -1,6 +1,9 @@
 import { highlightQuote } from "../utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { Blurhash } from "react-blurhash";
+import { CompProfileImage } from "../assets";
+import { Image } from "../components";
 
 export default function HeroSection({ profileImage, quote }) {
   return (
@@ -43,8 +46,9 @@ export default function HeroSection({ profileImage, quote }) {
 
         {/* My Image */}
         <article className="h-full w-full flex justify-center items-center hover:scale-110 transition duration-300 ease-in-out">
-          <img
+          <Image
             src={profileImage}
+            compressedSrc={CompProfileImage}
             alt="My Image"
             className="w-[500px] max-sm:w-[300px] select-none pointer-events-none"
           />
