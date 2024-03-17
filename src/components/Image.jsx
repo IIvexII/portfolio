@@ -19,6 +19,7 @@ export default function Image({
       <img
         src={src}
         alt={alt}
+        loading="lazy"
         onLoad={() => setImageLoaded(true)}
         className={`${className} ${imageLoaded ? "" : "hidden"}`}
       />
