@@ -1,4 +1,4 @@
-import { profileImage, wavyImage } from "./assets";
+import { profileImage } from "./assets";
 import { Header, Seperator } from "./components";
 import { socialInfo, pageInfo, quotes, skills } from "./constants";
 import { AboutSection, HeroSection, SkillsSection } from "./sections";

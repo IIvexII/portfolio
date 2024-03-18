@@ -12,27 +12,6 @@ import {
   faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  pythonImg,
-  javascriptImg,
-  cssImg,
-  htmlImg,
-  arduinoImg,
-  djangoImg,
-  dockerImg,
-  figmaImg,
-  gitImg,
-  githubImg,
-  langchainImg,
-  laravelImg,
-  mongodbImg,
-  mysqlImg,
-  postmanImg,
-  reactImg,
-  reduxImg,
-  tailwindImg,
-} from "../assets";
-
 const socialInfo = [
   { name: "Github", icon: faGithubAlt, link: "https://github.com/IIvexII" },
   {
@@ -67,24 +46,24 @@ const quotes = [
   },
 ];
 const skills = [
-  { name: "Python", icon: pythonImg },
-  { name: "Javascript", icon: javascriptImg },
-  { name: "CSS", icon: cssImg },
-  { name: "HTML", icon: htmlImg },
-  { name: "Arduino", icon: arduinoImg },
-  { name: "Django", icon: djangoImg },
-  { name: "Docker", icon: dockerImg },
-  { name: "Figma", icon: figmaImg },
-  { name: "Git", icon: gitImg },
-  { name: "Github", icon: githubImg },
-  { name: "LangChain", icon: langchainImg },
-  { name: "Laravel", icon: laravelImg },
-  { name: "MongoDB", icon: mongodbImg },
-  { name: "MySQL", icon: mysqlImg },
-  { name: "PostMan", icon: postmanImg },
-  { name: "React", icon: reactImg },
-  { name: "Redux", icon: reduxImg },
-  { name: "TailwindCSS", icon: tailwindImg },
+  { name: "Python", icon: '/assets/tech-stack/python.svg' },
+  { name: "JavaScript", icon: '/assets/tech-stack/javascript.svg' },
+  { name: "React", icon: '/assets/tech-stack/react.svg' },
+  { name: "Redux", icon: '/assets/tech-stack/redux.svg' },
+  { name: "Tailwind", icon: '/assets/tech-stack/tailwindcss-icon.svg' },
+  { name: "HTML", icon: '/assets/tech-stack/html-5.svg' },
+  { name: "CSS", icon: '/assets/tech-stack/css-3.svg' },
+  { name: "Figma", icon: '/assets/tech-stack/figma.svg' },
+  { name: "Git", icon: '/assets/tech-stack/git.svg' },
+  { name: "GitHub", icon: '/assets/tech-stack/github-icon.svg' },
+  { name: "Postman", icon: '/assets/tech-stack/postman.svg' },
+  { name: "Docker", icon: '/assets/tech-stack/docker-icon.svg' },
+  { name: "MongoDB", icon: '/assets/tech-stack/mongodb.svg' },
+  { name: "MySQL", icon: '/assets/tech-stack/mysql.svg' },
+  { name: "Laravel", icon: '/assets/tech-stack/laravel.svg' },
+  { name: "Arduino", icon: '/assets/tech-stack/arduino.svg' },
+  { name: "Django", icon: '/assets/tech-stack/django.svg' },
+  { name: "Langchain", icon: '/assets/tech-stack/langchain.png' },
 ];
 
 export { socialInfo, pageInfo, quotes, skills };
