@@ -12,9 +12,7 @@ export default function SkillsSection({ skills }) {
                     {skills.map((skill, index) => (
                         <abbr title={skill.name} key={index}  className="bg-white rounded-full w-24 h-24 flex justify-center items-center shadow-lg hover:scale-125 custom-transition select-none max-[792px]:w-20 max-[792px]:h-20 max-sm:w-[70px] max-sm:h-[70px]">
                             {/* Background icon div */}
-                            <div style={{ backgroundImage: `url(${skill.icon})` }} className="w-14 h-14 bg-contain bg-center bg-no-repeat max-[792px]:w-12 max-[792px]:h-12 max-sm:w-9 max-sm:h-9"></div>
-                            {/* Details of exterties */}
-                            <div className=""></div>
+                            <div style={{ backgroundImage: `url(${skill.icon})` }} className="w-14 h-14 grayscale brightness-95 bg-contain bg-center bg-no-repeat max-[792px]:w-12 max-[792px]:h-12 max-sm:w-9 max-sm:h-9"></div>
                         </abbr>
                     ))}
                 </div>

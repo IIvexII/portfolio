@@ -1,4 +1,4 @@
-import { highlightQuote } from "../utils";
+import { highlightText } from "../utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { CompProfileImage } from "../assets";
@@ -17,8 +17,8 @@ export default function HeroSection({ profileImage, quote }) {
           <blockquote className="z-[5] text-5xl text-justify hyphens-auto max-sm:text-3xl max-sm:text-center max-md:text-4xl select-none hover:scale-105 transition duration-300 ease-in-out">
             <span className="font-serif italic mr-1">"</span>
             <h1 className="inline font-extralight italic">
-              {highlightQuote(
-                quote,
+              {highlightText(
+                quote.text,
                 "bg-white text-black not-italic font-mono"
               )}
             </h1>

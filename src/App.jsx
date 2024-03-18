@@ -1,6 +1,6 @@
 import { profileImage } from "./assets";
 import { Header, Seperator } from "./components";
-import { socialInfo, pageInfo, quotes, skills } from "./constants";
+import { socialInfo, pageInfo, quotes, myInfo } from "./constants";
 import { AboutSection, HeroSection, SkillsSection } from "./sections";
 
 export default function App() {
@@ -28,13 +28,13 @@ export default function App() {
         {/*************************
          *   About Me Section
          **************************/}
-        <AboutSection />
+        <AboutSection aboutMe={myInfo['aboutMe']} />
 
         {/* Seperator */}
         <Seperator className="hidden seperator sm-height"/>
         
         {/* Skills Section */}
-        <SkillsSection skills={skills} />
+        <SkillsSection skills={myInfo['skills']} />
       </main>
     </>
   );

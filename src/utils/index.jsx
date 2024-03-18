@@ -1,5 +1,5 @@
-const highlightQuote = (quote, highlightClassName) => {
-  return quote.text.split("{").map((part, index) => {
+const highlightText = (text, highlightClassName) => {
+  return text.split("{").map((part, index) => {
     if (index === 0) {
       return part;
     }
@@ -13,4 +13,4 @@ const highlightQuote = (quote, highlightClassName) => {
   });
 };
 
-export { highlightQuote };
+export { highlightText };
