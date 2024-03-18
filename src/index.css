@@ -7,6 +7,9 @@
   .highlight {
     @apply bg-white text-black px-1;
   }
+  .custom-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
 }
 
 /* Media Query of max height 630 */
