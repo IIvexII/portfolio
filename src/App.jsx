@@ -16,14 +16,14 @@ export default function App() {
       {/*************************
        *         Main
        **************************/}
-      <main className='snap-y snap-mandatory max-sm-h:snap-proximity h-screen overflow-x-hidden scroll-smooth'>
+      <main className='snap-y snap-mandatory sm-height h-screen overflow-x-hidden scroll-smooth'>
         {/*************************
          *      Hero Section
          **************************/}
         <HeroSection profileImage={profileImage} quote={quotes[0]} />
           
         {/* Seperator */}
-        <Seperator className="hidden max-sm-h:block"/>
+        <Seperator className="hidden seperator sm-height"/>
         
         {/*************************
          *   About Me Section
@@ -31,7 +31,7 @@ export default function App() {
         <AboutSection />
 
         {/* Seperator */}
-        <Seperator className="hidden max-sm-h:block"/>
+        <Seperator className="hidden seperator sm-height"/>
         
         {/* Skills Section */}
         <SkillsSection skills={skills} />

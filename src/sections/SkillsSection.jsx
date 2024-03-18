@@ -1,6 +1,6 @@
 export default function SkillsSection({ skills }) {
   return (
-    <section id="skills" className="snap-start flex justify-center bg-black text-white h-screen min-h-[630px] md:max-h-[660px]">
+    <section id="skills" className="snap-start flex justify-center bg-black text-white h-screen min-h-[630px] md:max-h-[660px] overflow-hidden">
         <div className="mx-10 h-full w-full flex items-center max-w-[1024px] max-sm:flex-col-reverse max-sm:space-y-20 max-sm:pb-16">
             <div className="mt-56 w-full h-full flex flex-col space-y-16 justify-start items-center max-sm:mt-32">
                 {/* Top Title */}

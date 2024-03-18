@@ -8,3 +8,13 @@
     @apply bg-white text-black px-1;
   }
 }
+
+/* Media Query of max height 630 */
+@media (max-height: 630px) {
+  main.sm-height {
+    @apply snap-none;
+  }
+  .sm-height.seperator {
+    @apply block;
+  }
+}
