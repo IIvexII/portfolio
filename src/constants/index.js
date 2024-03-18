@@ -12,6 +12,27 @@ import {
   faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
 
+import {
+  pythonImg,
+  javascriptImg,
+  cssImg,
+  htmlImg,
+  arduinoImg,
+  djangoImg,
+  dockerImg,
+  figmaImg,
+  gitImg,
+  githubImg,
+  langchainImg,
+  laravelImg,
+  mongodbImg,
+  mysqlImg,
+  postmanImg,
+  reactImg,
+  reduxImg,
+  tailwindImg,
+} from "../assets";
+
 const socialInfo = [
   { name: "Github", icon: faGithubAlt, link: "https://github.com/IIvexII" },
   {
@@ -34,7 +55,7 @@ const socialInfo = [
 const pageInfo = [
   { name: "Home", icon: faHome, link: "#home" },
   { name: "About", icon: faCircleInfo, link: "#about-me" },
-  { name: "Tools", icon: faToolbox, link: "#" },
+  { name: "Skills", icon: faToolbox, link: "#skills" },
   { name: "Projects", icon: faCompassDrafting, link: "#" },
   { name: "Contact", icon: faAddressCard, link: "#" },
 ];
@@ -45,5 +66,25 @@ const quotes = [
     reference: "Cal Newport",
   },
 ];
+const skills = [
+  { name: "Python", icon: pythonImg },
+  { name: "Javascript", icon: javascriptImg },
+  { name: "CSS", icon: cssImg },
+  { name: "HTML", icon: htmlImg },
+  { name: "Arduino", icon: arduinoImg },
+  { name: "Django", icon: djangoImg },
+  { name: "Docker", icon: dockerImg },
+  { name: "Figma", icon: figmaImg },
+  { name: "Git", icon: gitImg },
+  { name: "Github", icon: githubImg },
+  { name: "LangChain", icon: langchainImg },
+  { name: "Laravel", icon: laravelImg },
+  { name: "MongoDB", icon: mongodbImg },
+  { name: "MySQL", icon: mysqlImg },
+  { name: "PostMan", icon: postmanImg },
+  { name: "React", icon: reactImg },
+  { name: "Redux", icon: reduxImg },
+  { name: "TailwindCSS", icon: tailwindImg },
+];
 
-export { socialInfo, pageInfo, quotes };
+export { socialInfo, pageInfo, quotes, skills };

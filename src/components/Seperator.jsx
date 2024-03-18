@@ -1,9 +1,8 @@
-import React from "react";
-
-export default function Seperator() {
+export default function Seperator({ className }) {
   return (
-    <div
-      className={`z-10 bg-[url('/src/assets/images/wavy-pattern.png')] w-screen h-5 bg-contain bg-center bg-repeat`}
-    ></div>
-  );
+    <>
+      {/* show the seperator if the height is small */}
+      <div className={`${className} z-10 bg-[url('/src/assets/images/wavy-pattern.png')] w-screen h-5 bg-contain bg-center bg-repeat`}></div>
+    </>
+  )
 }

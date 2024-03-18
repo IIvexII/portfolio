@@ -4,7 +4,11 @@ const plugin = require("tailwindcss/plugin");
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        "max-sm-h": { raw: '(max-height: 630px)' },
+      }
+    },
   },
   plugins: [
     plugin(function ({ addVariant, e, postcss }) {
